@@ -1,0 +1,25 @@
+{
+  "name": "videostreamingapi",
+  "version": "1.0.0",
+  "description": "videostreamingapi for retrieving , storing and displaying videos",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js"
+  },
+  "keywords": [],
+  "author": "Sylvester Eziagor",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "^0.0.1-security",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.3",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.11.0"
+  }
+}
