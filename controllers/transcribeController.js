@@ -3,10 +3,12 @@ const fs = require("fs");
 const ffmpeg = require("fluent-ffmpeg");
 const { Readable } = require("stream");
 const ffmpegPath = require("@ffmpeg-installer/ffmpeg").path;
+const dotenv = require("dotenv");
+dotenv.config({ path: "./config.env" });
 
 const OpenAI = require("openai");
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: process.env.OPENAI_API_KEY,
 });
 ffmpeg.setFfmpegPath(ffmpegPath);
 
